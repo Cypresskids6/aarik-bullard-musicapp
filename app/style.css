@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+:root{ 
+   --Steel-Blue: #ADD8E6;
+   --Steel-Pink: #CC4BC2;
+   --Light-Blue: #ADD8E6;
+   --Dark-Magenta: #A91B6B;
+   --Rosewood: #31081F;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #3F88C5;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#A91B6B;
+    font-family: Cedarville+Cursive;
+}
+
+.nav-logo{
+    height: 7vh;
+    padding-left: 1vmin;
+}
+
+.nav-link{
+    padding: right 1vmin;
+    text-decoration: none;
+    color: #CC4BC2;
+    font-size: 3vmin;
+    font-family: Shadows Into Light;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    scale: 0.98
+}
+
+
+.nav-title{
+    font-size: 4vmin;
+    font-family: Fuzzy Bubbles;
+}
+
+.body-content{
+    width: 100%;
+    height: fit-content;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:10vh;
+    background: linear-gradient(0.25turn,var(--Rosewood),var(--Light-Blue), var(--Dark-Magenta) );
+}
+
+.footer{
+    background-color: var(--Rosewood);
+    height: fit-content;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-grid{
+    margin-top: 10vh;
+    width: 60%;
+    height: 60vh;
+    background-color: var(--Light-Blue);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1vmin;
+}
+
+.lyric{
+    font-size: 4vmin;
+    text-align: center;
+    color: var(--Rosewood);
+    margin-top: 2vmin;
+    font-family: Shadows Into Light;
+}
+
+.image-box{
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.music-image{
+    width: 45vmin;
+    height: 45vmin;
+    transition: .05 ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.music-image:hover{
+    filter: brightness(50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*play button*/
+
+.song-name{
+    font-size: 8.5vmin;
+    color: #31081F;
+    text-align: center;
+    line-height: 80%;
+    margin-bottom: 2vmin;
+    font-family: Cedarville Cursive;
+}
+
+.music-supp-text{
+    font-size: 4vmin;
+    text-align: center;
+    font-family: Shadows Into Light
+}
+
+.artist-name{
+    font-size: 5vmin;
+    color: #31081F;
+    text-align: center;
+    font-family: Cedarville Cursive;
+}
+
+.album{
+    color: #31081F;
+    font-size: 5vmin;
+    text-align: center;
+    font-family: Cedarville Cursive;
+}
+
+.song-link{
+    font-size: 3vmin;
+    color: #31081F;
+    text-decoration: none;
+    font-family: Cedarville Cursive;
+}
+
+.song-link-hover{
+    text-decoration: underline;
+    scale: 0.98;
+}
+
+.music-info-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.play-button{
+    width: 40vmin;
+    height: 40vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+}
+
+.song-name{
+    
+}
